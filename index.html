@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software Engineer · Edición esencial</title>
+<meta name="description" content="Edición esencial del manual de carrera para ingenieros de software: 27 módulos, 81 lecciones, evaluaciones, diagramas y manual en PDF. Basado en el libro de Gergely Orosz.">
+<meta name="theme-color" content="#f5f1e8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317130e'/%3E%3Ctext x='32' y='43' font-family='Inter,Arial' font-size='26' font-weight='700' fill='%23f5f1e8' text-anchor='middle'%3ESE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/curso.css">
+<script>(function(){try{var t=localStorage.getItem('swe_esencial_theme');if(!t){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+
+</head>
+<body class="is-home">
+<a class="skip" href="#temario">Saltar al temario</a>
+<header class="masthead">
+  <a class="brand" href="index.html"><span class="brand-mark">SE</span><span class="brand-text"><strong>Software Engineer</strong><span>Edición esencial</span></span></a>
+  <nav class="mast-nav" aria-label="Principal"><a href="#temario">Temario</a><a href="#metodo">Método</a><a href="glosario.html">Glosario</a><a href="progreso.html">Mi progreso</a></nav>
+  <div class="mast-actions">
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Cambiar tema"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+    <a class="mast-cta" href="se1l1.html">Empezar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="eyebrow">Edición esencial · 2026</span>
+    <h1>Una carrera larga,<br>con <em>criterio</em>.</h1>
+    <p class="lede">La edición esencial para recorrer la carrera de ingeniería de software: de los primeros años a staff engineer, con decisiones, hábitos y conversaciones que de verdad importan.</p>
+    <div class="hero-actions">
+      <a class="btn btn-ink" href="se1l1.html">Abrir la primera lección <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      <a class="btn btn-line" href="Software-Engineer-Esencial.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg> Descargar el PDF</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>108</b><span>Lecciones</span></div>
+      <div class="hero-stat"><b>27</b><span>Módulos</span></div>
+      <div class="hero-stat"><b>11 h</b><span>De lectura</span></div>
+      <div class="hero-stat"><b>81</b><span>Diagramas</span></div>
+    </div>
+  </div>
+  <aside class="pass" aria-label="Tu progreso en el curso">
+    <div class="pass-top"><span class="eyebrow">Pase de estudiante</span><span class="pass-edition">SWE · 2026<br>Español</span></div>
+    <div class="pass-main"><span class="pass-big">108</span><span class="pass-big-label">lecciones<br>por recorrer</span></div>
+    <p class="pass-desc">Tu avance se guarda en este navegador. Empieza por donde quieras: el curso está pensado para leerse en orden.</p>
+    <div class="pass-progress"><div class="bar"><i data-bar></i></div><span><b data-done-count>0</b> / 108</span></div>
+    <div class="pass-actions">
+      <a class="btn btn-cream" data-resume href="se1l1.html"><span><span data-resume-label>Empezar el curso</span><br><small style="font-weight:500;opacity:.7;font-size:10px" data-resume-title>Dos caminos que se bifurcan</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      <a class="btn btn-line" style="border-color:rgba(255,255,255,.22);color:#e9e1d1" href="Software-Engineer-Esencial.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg> Manual esencial en PDF</a>
+    </div>
+    <div class="pass-note"><span>27 evaluaciones</span><span>Acceso libre</span></div>
+  </aside>
+</section>
+
+<section class="section" id="temario">
+  <div class="section-head">
+    <div><span class="eyebrow">Plan de estudios</span><h2>Todo el temario, a la vista.</h2></div>
+    <p>Veintisiete módulos que siguen el arco de una carrera: fundamentos, oficio, seniority, liderazgo técnico y alcance organizativo.</p>
+    <button class="text-toggle" type="button" data-toggle-all>Contraer el temario</button>
+  </div>
+  <details class="module" data-module="01" open>
+  <summary>
+    <span class="module-num">01</span>
+    <span class="module-title-wrap"><span class="module-part">Parte I</span><span class="module-title">Trayectorias profesionales</span><span class="module-sub">Las decisiones que definen una carrera no caben en una sola escalera</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="01">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="01"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se1l1" href="se1l1.html">
+  <span class="row-num">01.1</span>
+  <span class="row-title">Dos caminos que se bifurcan</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se1l2" href="se1l2.html">
+  <span class="row-num">01.2</span>
+  <span class="row-title">Especialista, generalista y el perfil en T</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se1l3" href="se1l3.html">
+  <span class="row-num">01.3</span>
+  <span class="row-title">Elegir empresa, no solo puesto</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se1q" href="se1q.html">
+  <span class="row-num">01.4</span>
+  <span class="row-title">Cierre del módulo 01</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="02" open>
+  <summary>
+    <span class="module-num">02</span>
+    <span class="module-title-wrap"><span class="module-part">Parte I</span><span class="module-title">Tomar las riendas de tu carrera</span><span class="module-sub">Un plan propio, visibilidad honesta y relaciones que abren puertas</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="02">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="02"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se2l1" href="se2l1.html">
+  <span class="row-num">02.1</span>
+  <span class="row-title">Diseñar un plan que no dependa del azar</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se2l2" href="se2l2.html">
+  <span class="row-num">02.2</span>
+  <span class="row-title">Visibilidad sin autopromoción vacía</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se2l3" href="se2l3.html">
+  <span class="row-num">02.3</span>
+  <span class="row-title">Mentores, patrocinadores y redes</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se2q" href="se2q.html">
+  <span class="row-num">02.4</span>
+  <span class="row-title">Cierre del módulo 02</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="03" open>
+  <summary>
+    <span class="module-num">03</span>
+    <span class="module-title-wrap"><span class="module-part">Parte I</span><span class="module-title">Evaluaciones de desempeño</span><span class="module-sub">Cómo leer el sistema, documentar tu impacto y convertir el feedback en mejora</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="03">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="03"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se3l1" href="se3l1.html">
+  <span class="row-num">03.1</span>
+  <span class="row-title">Cómo funciona una evaluación por dentro</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se3l2" href="se3l2.html">
+  <span class="row-num">03.2</span>
+  <span class="row-title">Escribir tu autoevaluación con evidencias</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se3l3" href="se3l3.html">
+  <span class="row-num">03.3</span>
+  <span class="row-title">Recibir feedback que incomoda</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se3q" href="se3q.html">
+  <span class="row-num">03.4</span>
+  <span class="row-title">Cierre del módulo 03</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="04" open>
+  <summary>
+    <span class="module-num">04</span>
+    <span class="module-title-wrap"><span class="module-part">Parte I</span><span class="module-title">Ascensos</span><span class="module-sub">Qué se decide realmente, cómo se prepara el caso y qué hacer cuando no llega</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="04">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="04"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se4l1" href="se4l1.html">
+  <span class="row-num">04.1</span>
+  <span class="row-title">Qué mira una promoción de verdad</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se4l2" href="se4l2.html">
+  <span class="row-num">04.2</span>
+  <span class="row-title">Construir el caso con tiempo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se4l3" href="se4l3.html">
+  <span class="row-num">04.3</span>
+  <span class="row-title">El ascenso que no llega</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se4q" href="se4q.html">
+  <span class="row-num">04.4</span>
+  <span class="row-title">Cierre del módulo 04</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="05" open>
+  <summary>
+    <span class="module-num">05</span>
+    <span class="module-title-wrap"><span class="module-part">Parte I</span><span class="module-title">Prosperar en distintos entornos</span><span class="module-sub">Grandes empresas, startups y trabajo remoto tienen reglas distintas</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="05">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="05"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se5l1" href="se5l1.html">
+  <span class="row-num">05.1</span>
+  <span class="row-title">Grandes empresas: navegar la escala</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se5l2" href="se5l2.html">
+  <span class="row-num">05.2</span>
+  <span class="row-title">Startups y scale-ups: crecer con el caos</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se5l3" href="se5l3.html">
+  <span class="row-num">05.3</span>
+  <span class="row-title">Trabajo remoto e híbrido: confianza y visibilidad</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se5q" href="se5q.html">
+  <span class="row-num">05.4</span>
+  <span class="row-title">Cierre del módulo 05</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="06" open>
+  <summary>
+    <span class="module-num">06</span>
+    <span class="module-title-wrap"><span class="module-part">Parte I</span><span class="module-title">Cambiar de trabajo</span><span class="module-sub">Buscar con criterio, entrevistar con evidencia y negociar sin quemar puentes</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="06">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="06"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se6l1" href="se6l1.html">
+  <span class="row-num">06.1</span>
+  <span class="row-title">Buscar sin quemar el puente</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se6l2" href="se6l2.html">
+  <span class="row-num">06.2</span>
+  <span class="row-title">Entrevistas: preparar evidencia, no respuestas</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se6l3" href="se6l3.html">
+  <span class="row-num">06.3</span>
+  <span class="row-title">Negociar y salir bien</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se6q" href="se6q.html">
+  <span class="row-num">06.4</span>
+  <span class="row-title">Cierre del módulo 06</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="07" open>
+  <summary>
+    <span class="module-num">07</span>
+    <span class="module-title-wrap"><span class="module-part">Parte II</span><span class="module-title">Sacar las cosas adelante</span><span class="module-sub">Prioridad, planificación y bloqueos en el trabajo diario</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="07">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="07"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se7l1" href="se7l1.html">
+  <span class="row-num">07.1</span>
+  <span class="row-title">Priorizar antes de empezar</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se7l2" href="se7l2.html">
+  <span class="row-num">07.2</span>
+  <span class="row-title">Planificar en unidades pequeñas</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se7l3" href="se7l3.html">
+  <span class="row-num">07.3</span>
+  <span class="row-title">Bloqueos y dependencias</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se7q" href="se7q.html">
+  <span class="row-num">07.4</span>
+  <span class="row-title">Cierre del módulo 07</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="08" open>
+  <summary>
+    <span class="module-num">08</span>
+    <span class="module-title-wrap"><span class="module-part">Parte II</span><span class="module-title">Programar</span><span class="module-sub">Legibilidad, depuración y revisión como habilidades cotidianas</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="08">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="08"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se8l1" href="se8l1.html">
+  <span class="row-num">08.1</span>
+  <span class="row-title">Código que se lee</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se8l2" href="se8l2.html">
+  <span class="row-num">08.2</span>
+  <span class="row-title">Depurar con método</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se8l3" href="se8l3.html">
+  <span class="row-num">08.3</span>
+  <span class="row-title">Revisar código sin fricción</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se8q" href="se8q.html">
+  <span class="row-num">08.4</span>
+  <span class="row-title">Cierre del módulo 08</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="09" open>
+  <summary>
+    <span class="module-num">09</span>
+    <span class="module-title-wrap"><span class="module-part">Parte II</span><span class="module-title">Desarrollo de software</span><span class="module-sub">Del problema al requisito y del requisito a una entrega incremental</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="09">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="09"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se9l1" href="se9l1.html">
+  <span class="row-num">09.1</span>
+  <span class="row-title">Del problema al requisito</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se9l2" href="se9l2.html">
+  <span class="row-num">09.2</span>
+  <span class="row-title">Entregar en rebanadas</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se9l3" href="se9l3.html">
+  <span class="row-num">09.3</span>
+  <span class="row-title">Colaborar con producto y diseño</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se9q" href="se9q.html">
+  <span class="row-num">09.4</span>
+  <span class="row-title">Cierre del módulo 09</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="10" open>
+  <summary>
+    <span class="module-num">10</span>
+    <span class="module-title-wrap"><span class="module-part">Parte II</span><span class="module-title">Herramientas del ingeniero productivo</span><span class="module-sub">Dominar el entorno, automatizar lo repetible y usar la IA con criterio</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="10">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="10"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se10l1" href="se10l1.html">
+  <span class="row-num">10.1</span>
+  <span class="row-title">El entorno como extensión</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se10l2" href="se10l2.html">
+  <span class="row-num">10.2</span>
+  <span class="row-title">Git como registro de decisiones</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se10l3" href="se10l3.html">
+  <span class="row-num">10.3</span>
+  <span class="row-title">Asistentes de IA sin delegar el criterio</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se10q" href="se10q.html">
+  <span class="row-num">10.4</span>
+  <span class="row-title">Cierre del módulo 10</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="11" open>
+  <summary>
+    <span class="module-num">11</span>
+    <span class="module-title-wrap"><span class="module-part">Parte III</span><span class="module-title">Sacar las cosas adelante</span><span class="module-sub">Ambigüedad, liderazgo sin autoridad y delegación en el nivel sénior</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="11">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="11"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se11l1" href="se11l1.html">
+  <span class="row-num">11.1</span>
+  <span class="row-title">Navegar la ambigüedad</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se11l2" href="se11l2.html">
+  <span class="row-num">11.2</span>
+  <span class="row-title">Liderar sin autoridad</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se11l3" href="se11l3.html">
+  <span class="row-num">11.3</span>
+  <span class="row-title">Delegar y desbloquear</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se11q" href="se11q.html">
+  <span class="row-num">11.4</span>
+  <span class="row-title">Cierre del módulo 11</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="12" open>
+  <summary>
+    <span class="module-num">12</span>
+    <span class="module-title-wrap"><span class="module-part">Parte III</span><span class="module-title">Colaboración y trabajo en equipo</span><span class="module-sub">Comunicar con claridad, discrepar sin romper y hacer crecer a otros</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="12">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="12"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se12l1" href="se12l1.html">
+  <span class="row-num">12.1</span>
+  <span class="row-title">Comunicación que reduce incertidumbre</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se12l2" href="se12l2.html">
+  <span class="row-num">12.2</span>
+  <span class="row-title">Desacuerdos productivos</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se12l3" href="se12l3.html">
+  <span class="row-num">12.3</span>
+  <span class="row-title">Mentoría y retroalimentación</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se12q" href="se12q.html">
+  <span class="row-num">12.4</span>
+  <span class="row-title">Cierre del módulo 12</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="13" open>
+  <summary>
+    <span class="module-num">13</span>
+    <span class="module-title-wrap"><span class="module-part">Parte III</span><span class="module-title">Ingeniería de software</span><span class="module-sub">Diseñar con trade-offs, gestionar deuda y mantener el sistema vivo</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="13">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="13"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se13l1" href="se13l1.html">
+  <span class="row-num">13.1</span>
+  <span class="row-title">Diseñar antes de código</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se13l2" href="se13l2.html">
+  <span class="row-num">13.2</span>
+  <span class="row-title">Deuda técnica con intención</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se13l3" href="se13l3.html">
+  <span class="row-num">13.3</span>
+  <span class="row-title">Mantener un sistema vivo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se13q" href="se13q.html">
+  <span class="row-num">13.4</span>
+  <span class="row-title">Cierre del módulo 13</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="14" open>
+  <summary>
+    <span class="module-num">14</span>
+    <span class="module-title-wrap"><span class="module-part">Parte III</span><span class="module-title">Pruebas</span><span class="module-sub">Dónde invertir, qué casos cubrir y cómo mantener la confianza</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="14">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="14"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se14l1" href="se14l1.html">
+  <span class="row-num">14.1</span>
+  <span class="row-title">La pirámide y sus límites</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se14l2" href="se14l2.html">
+  <span class="row-num">14.2</span>
+  <span class="row-title">Pruebas que encuentran fallos</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se14l3" href="se14l3.html">
+  <span class="row-num">14.3</span>
+  <span class="row-title">Pruebas inestables y confianza</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se14q" href="se14q.html">
+  <span class="row-num">14.4</span>
+  <span class="row-title">Cierre del módulo 14</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="15" open>
+  <summary>
+    <span class="module-num">15</span>
+    <span class="module-title-wrap"><span class="module-part">Parte III</span><span class="module-title">Arquitectura de software</span><span class="module-sub">Fronteras, contratos y evolución sin reescrituras heroicas</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="15">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="15"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se15l1" href="se15l1.html">
+  <span class="row-num">15.1</span>
+  <span class="row-title">Fronteras y acoplamiento</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se15l2" href="se15l2.html">
+  <span class="row-num">15.2</span>
+  <span class="row-title">APIs y contratos</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se15l3" href="se15l3.html">
+  <span class="row-num">15.3</span>
+  <span class="row-title">Evolucionar sin reescribir</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se15q" href="se15q.html">
+  <span class="row-num">15.4</span>
+  <span class="row-title">Cierre del módulo 15</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="16" open>
+  <summary>
+    <span class="module-num">16</span>
+    <span class="module-title-wrap"><span class="module-part">Parte IV</span><span class="module-title">Gestión de proyectos</span><span class="module-sub">Planificar con incertidumbre, gestionar riesgos y comunicar el estado real</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="16">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="16"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se16l1" href="se16l1.html">
+  <span class="row-num">16.1</span>
+  <span class="row-title">Planificar con incertidumbre</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se16l2" href="se16l2.html">
+  <span class="row-num">16.2</span>
+  <span class="row-title">Dependencias y riesgos</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se16l3" href="se16l3.html">
+  <span class="row-num">16.3</span>
+  <span class="row-title">Estado sin teatro</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se16q" href="se16q.html">
+  <span class="row-num">16.4</span>
+  <span class="row-title">Cierre del módulo 16</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="17" open>
+  <summary>
+    <span class="module-num">17</span>
+    <span class="module-title-wrap"><span class="module-part">Parte IV</span><span class="module-title">Llevar a producción</span><span class="module-sub">Despliegues seguros, observabilidad e incidentes sin pánico</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="17">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="17"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se17l1" href="se17l1.html">
+  <span class="row-num">17.1</span>
+  <span class="row-title">El camino a producción</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se17l2" href="se17l2.html">
+  <span class="row-num">17.2</span>
+  <span class="row-title">Despliegues seguros</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se17l3" href="se17l3.html">
+  <span class="row-num">17.3</span>
+  <span class="row-title">Incidentes y guardias</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se17q" href="se17q.html">
+  <span class="row-num">17.4</span>
+  <span class="row-title">Cierre del módulo 17</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="18" open>
+  <summary>
+    <span class="module-num">18</span>
+    <span class="module-title-wrap"><span class="module-part">Parte IV</span><span class="module-title">Gestión de stakeholders</span><span class="module-sub">Expectativas, prioridades y malas noticias a tiempo</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="18">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="18"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se18l1" href="se18l1.html">
+  <span class="row-num">18.1</span>
+  <span class="row-title">Mapear expectativas</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se18l2" href="se18l2.html">
+  <span class="row-num">18.2</span>
+  <span class="row-title">Negociar prioridades</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se18l3" href="se18l3.html">
+  <span class="row-num">18.3</span>
+  <span class="row-title">Malas noticias a tiempo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se18q" href="se18q.html">
+  <span class="row-num">18.4</span>
+  <span class="row-title">Cierre del módulo 18</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="19" open>
+  <summary>
+    <span class="module-num">19</span>
+    <span class="module-title-wrap"><span class="module-part">Parte IV</span><span class="module-title">Estructura del equipo</span><span class="module-sub">Misión, propiedad, interfaces y crecimiento del grupo</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="19">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="19"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se19l1" href="se19l1.html">
+  <span class="row-num">19.1</span>
+  <span class="row-title">Diseñar equipos con propósito</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se19l2" href="se19l2.html">
+  <span class="row-num">19.2</span>
+  <span class="row-title">Ownership y límites</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se19l3" href="se19l3.html">
+  <span class="row-num">19.3</span>
+  <span class="row-title">Contratar y crecer</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se19q" href="se19q.html">
+  <span class="row-num">19.4</span>
+  <span class="row-title">Cierre del módulo 19</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="20" open>
+  <summary>
+    <span class="module-num">20</span>
+    <span class="module-title-wrap"><span class="module-part">Parte IV</span><span class="module-title">Dinámica de equipo</span><span class="module-sub">Confianza, motivación y retrospectivas que producen cambios</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="20">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="20"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se20l1" href="se20l1.html">
+  <span class="row-num">20.1</span>
+  <span class="row-title">Confianza y seguridad psicológica</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se20l2" href="se20l2.html">
+  <span class="row-num">20.2</span>
+  <span class="row-title">Motivación más allá del salario</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se20l3" href="se20l3.html">
+  <span class="row-num">20.3</span>
+  <span class="row-title">Retrospectivas que cambian algo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se20q" href="se20q.html">
+  <span class="row-num">20.4</span>
+  <span class="row-title">Cierre del módulo 20</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="21" open>
+  <summary>
+    <span class="module-num">21</span>
+    <span class="module-title-wrap"><span class="module-part">Parte V</span><span class="module-title">Entender el negocio</span><span class="module-sub">Cómo gana dinero la empresa, qué métricas importan y cómo decidir con esa lente</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="21">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="21"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se21l1" href="se21l1.html">
+  <span class="row-num">21.1</span>
+  <span class="row-title">Cómo gana dinero la empresa</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se21l2" href="se21l2.html">
+  <span class="row-num">21.2</span>
+  <span class="row-title">Métricas que importan</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se21l3" href="se21l3.html">
+  <span class="row-num">21.3</span>
+  <span class="row-title">Decisiones técnicas con lente de negocio</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se21q" href="se21q.html">
+  <span class="row-num">21.4</span>
+  <span class="row-title">Cierre del módulo 21</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="22" open>
+  <summary>
+    <span class="module-num">22</span>
+    <span class="module-title-wrap"><span class="module-part">Parte V</span><span class="module-title">Colaboración</span><span class="module-sub">Influir sin autoridad, escribir para escalar y multiplicar criterio</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="22">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="22"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se22l1" href="se22l1.html">
+  <span class="row-num">22.1</span>
+  <span class="row-title">Influir en toda la organización</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se22l2" href="se22l2.html">
+  <span class="row-num">22.2</span>
+  <span class="row-title">Escribir para escalar criterio</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se22l3" href="se22l3.html">
+  <span class="row-num">22.3</span>
+  <span class="row-title">Mentoría y multiplicación</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se22q" href="se22q.html">
+  <span class="row-num">22.4</span>
+  <span class="row-title">Cierre del módulo 22</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="23" open>
+  <summary>
+    <span class="module-num">23</span>
+    <span class="module-title-wrap"><span class="module-part">Parte V</span><span class="module-title">Ingeniería de software</span><span class="module-sub">Estrategia técnica, estándares y calidad a escala organizativa</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="23">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="23"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se23l1" href="se23l1.html">
+  <span class="row-num">23.1</span>
+  <span class="row-title">Estrategia técnica</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se23l2" href="se23l2.html">
+  <span class="row-num">23.2</span>
+  <span class="row-title">Estándares y plataformas</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se23l3" href="se23l3.html">
+  <span class="row-num">23.3</span>
+  <span class="row-title">Calidad a escala</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se23q" href="se23q.html">
+  <span class="row-num">23.4</span>
+  <span class="row-title">Cierre del módulo 23</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="24" open>
+  <summary>
+    <span class="module-num">24</span>
+    <span class="module-title-wrap"><span class="module-part">Parte V</span><span class="module-title">Sistemas de software fiables</span><span class="module-sub">Objetivos de servicio, resiliencia, capacidad y coste</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="24">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="24"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se24l1" href="se24l1.html">
+  <span class="row-num">24.1</span>
+  <span class="row-title">SLIs, SLOs y presupuesto de error</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se24l2" href="se24l2.html">
+  <span class="row-num">24.2</span>
+  <span class="row-title">Resiliencia y degradación</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se24l3" href="se24l3.html">
+  <span class="row-num">24.3</span>
+  <span class="row-title">Capacidad y coste</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se24q" href="se24q.html">
+  <span class="row-num">24.4</span>
+  <span class="row-title">Cierre del módulo 24</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="25" open>
+  <summary>
+    <span class="module-num">25</span>
+    <span class="module-title-wrap"><span class="module-part">Parte V</span><span class="module-title">Arquitectura de software</span><span class="module-sub">Visión organizativa, migraciones largas y decisiones de construir o comprar</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="25">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="25"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se25l1" href="se25l1.html">
+  <span class="row-num">25.1</span>
+  <span class="row-title">Arquitectura a escala organizativa</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se25l2" href="se25l2.html">
+  <span class="row-num">25.2</span>
+  <span class="row-title">Migraciones y visión de largo plazo</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se25l3" href="se25l3.html">
+  <span class="row-num">25.3</span>
+  <span class="row-title">Construir, comprar o adoptar</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se25q" href="se25q.html">
+  <span class="row-num">25.4</span>
+  <span class="row-title">Cierre del módulo 25</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="26" open>
+  <summary>
+    <span class="module-num">26</span>
+    <span class="module-title-wrap"><span class="module-part">Parte VI</span><span class="module-title">Aprendizaje continuo</span><span class="module-sub">Practicar con intención, leer y escribir para pensar mejor</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="26">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="26"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se26l1" href="se26l1.html">
+  <span class="row-num">26.1</span>
+  <span class="row-title">Aprender de forma deliberada</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se26l2" href="se26l2.html">
+  <span class="row-num">26.2</span>
+  <span class="row-title">Leer, escribir y enseñar</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se26l3" href="se26l3.html">
+  <span class="row-num">26.3</span>
+  <span class="row-title">Reinventarse sin empezar de cero</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se26q" href="se26q.html">
+  <span class="row-num">26.4</span>
+  <span class="row-title">Cierre del módulo 26</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details><details class="module" data-module="27" open>
+  <summary>
+    <span class="module-num">27</span>
+    <span class="module-title-wrap"><span class="module-part">Parte VI</span><span class="module-title">Lecturas y siguientes pasos</span><span class="module-sub">Elegir qué aprender, construir un plan y cerrar el manual</span></span>
+    <span class="module-meta">4 lecciones · 0.4 h<br><span data-modcount="27">0/4</span> completadas</span>
+    <svg class="module-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+  </summary>
+  <div class="module-progress" aria-hidden="true"><i data-modbar="27"></i></div>
+  <div class="module-body"><a class="row" data-lesson-row="se27l1" href="se27l1.html">
+  <span class="row-num">27.1</span>
+  <span class="row-title">Cómo elegir qué leer</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se27l2" href="se27l2.html">
+  <span class="row-num">27.2</span>
+  <span class="row-title">Construir un plan personal</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row" data-lesson-row="se27l3" href="se27l3.html">
+  <span class="row-num">27.3</span>
+  <span class="row-title">Cerrar el manual, abrir el siguiente</span>
+  <span class="row-type">Lección</span>
+  <span class="row-time">4 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a><a class="row quiz" data-lesson-row="se27q" href="se27q.html">
+  <span class="row-num">27.4</span>
+  <span class="row-title">Cierre del módulo 27</span>
+  <span class="row-type">Examen</span>
+  <span class="row-time">10 min</span>
+  <span class="row-check" aria-hidden="true"></span>
+</a></div>
+</details>
+</section>
+
+<section class="section" id="metodo">
+  <div class="section-head">
+    <div><span class="eyebrow">Cómo está pensado</span><h2>Leer, comprobar, construir.</h2></div>
+    <p>Una experiencia de lectura continua: sin botones que te devuelvan al inicio y sin callejones sin salida.</p>
+  </div>
+  <div class="method-grid">
+    <div class="method"><span class="n">01</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><h3>Avanza sin fricción</h3><p>Cada lección termina con «Completar y seguir». También funcionan las flechas ← y → del teclado. El temario siempre está a un clic.</p></div>
+    <div class="method"><span class="n">02</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"></path></svg><h3>Comprueba lo aprendido</h3><p>Al cerrar cada módulo, una evaluación de tres preguntas y ejercicios aplicados. No hay notas: hay criterio.</p></div>
+    <div class="method"><span class="n">03</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg><h3>Llévatelo contigo</h3><p>El manual esencial en PDF incluye las 108 lecciones, los diagramas y las evaluaciones para leer o imprimir sin conexión.</p></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div><span class="eyebrow" style="color:#ff8a5c">Sigue construyendo</span><h2>Tu carrera no es una escalera.</h2><p>Este manual convierte los temas de <em>The Software Engineer’s Guidebook</em> en un recorrido práctico: carrera, oficio, equipos y decisiones técnicas. Úsalo para decidir mejor, no para memorizar títulos.</p></div>
+    <div class="foot-links"><a href="se1l1.html">Empezar el curso →</a><a href="glosario.html">Glosario de términos →</a><a href="progreso.html">Mi progreso →</a><a href="Software-Engineer-Esencial.pdf">Manual en PDF →</a></div>
+  </div>
+  <div class="foot-bottom"><span>Software Engineer · Edición esencial · 2026</span><span>Manual original · Temas de Gergely Orosz</span></div>
+</footer>
+<div class="searchbox" data-search role="dialog" aria-modal="true" aria-label="Buscar en el curso">
+  <div class="search-panel">
+    <div class="search-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg><input class="search-input" type="search" placeholder="Busca una lección o un tema…" aria-label="Buscar una lección o un tema" autocomplete="off"><button class="search-close" type="button" data-search-close>ESC</button></div>
+    <div class="search-results"></div>
+    <div class="sr-hint"><span>↑ ↓ para navegar · Enter para abrir</span><span>Esc para cerrar</span></div>
+  </div>
+</div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+<script>window.SWE={"total":108,"current":null,"next":null,"prev":null,"modules":[{"num":"01","title":"Trayectorias profesionales","lessons":[{"id":"se1l1","num":1,"lnum":1,"title":"Dos caminos que se bifurcan","href":"se1l1.html","kind":"lesson","search":"La escalera única es un mito cómodo Qué cambia cuando gestionas Cómo decidir sin cerrar puertas Contribuidor individual y gestión son oficios distintos, no peldaños del mismo oficio. El manager produce resultados a través del equipo; su éxito se mide en otras personas. Probar el rol con un proyecto o una interinidad es más barato que cambiar de carrera a ciegas. Elegir por salario o estatus sin examinar el trabajo diario suele terminar en desgaste."},{"id":"se1l2","num":2,"lnum":2,"title":"Especialista, generalista y el perfil en T","href":"se1l2.html","kind":"lesson","search":"La profundidad se nota cuando hay presión La amplitud conecta la profundidad con el negocio Cuándo conviene cambiar de forma La profundidad se demuestra con problemas difíciles resueltos, no con certificados. La amplitud útil es la que permite conectar tu especialidad con producto, operación y negocio. Al empezar, explora; después elige un pico; más tarde vuelve a abrir el foco. Un currículum variado sin reputación clara transmite dispersión, no versatilidad."},{"id":"se1l3","num":3,"lnum":3,"title":"Elegir empresa, no solo puesto","href":"se1l3.html","kind":"lesson","search":"Producto, servicio y plataforma La etapa cambia el trabajo disponible Mira el equipo, no solo la marca Producto, servicio y plataforma entrenan habilidades distintas y tienen ritmos distintos. La etapa de la empresa determina cuánta ambigüedad y cuánta estructura vas a vivir. La marca no sustituye la calidad del equipo concreto que te contrata. Pregunta por decisiones, incidentes y rotación; son señales más fiables que el eslogan."},{"id":"se1q","num":4,"lnum":4,"title":"Cierre del módulo 01","href":"se1q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La carrera se bifurca entre contribución individual y gestión; son oficios diferentes. Un perfil valioso combina una base amplia con un pico de profundidad reconocible. El tipo de producto y la etapa de la empresa definen el trabajo real del puesto. Antes de aceptar, examina el equipo, sus decisiones y sus fricciones, no solo la marca."}]},{"num":"02","title":"Tomar las riendas de tu carrera","lessons":[{"id":"se2l1","num":5,"lnum":1,"title":"Diseñar un plan que no dependa del azar","href":"se2l1.html","kind":"lesson","search":"Un objetivo que quepa en una frase Define la evidencia antes del esfuerzo Protege el tiempo y revisa el rumbo Un objetivo de carrera debe describir un cambio observable, no un deseo genérico. La evidencia se define antes del esfuerzo y debe poder verificarla otra persona. El tiempo de desarrollo compite con lo urgente; si no se reserva, se pierde. Revisar cada trimestre convierte el plan en instrumento y evita que se vuelva culpa."},{"id":"se2l2","num":6,"lnum":2,"title":"Visibilidad sin autopromoción vacía","href":"se2l2.html","kind":"lesson","search":"Trabajo visible no es trabajo superficial Escribe para quien decide Construye reputación dentro de la organización La visibilidad útil deja rastro del problema, la decisión y el resultado. Escribe para quien decide: conclusión primero, contexto después, detalle a demanda. La reputación se construye en hábitos pequeños y en la coherencia entre palabra y obra. Participar fuera del equipo amplía la red y demuestra criterio en contextos nuevos."},{"id":"se2l3","num":7,"lnum":3,"title":"Mentores, patrocinadores y redes","href":"se2l3.html","kind":"lesson","search":"Cada figura tiene una función Cómo pedir ayuda sin consumir a nadie Redes que sobreviven al cambio de empresa Mentor, patrocinador y par cumplen funciones distintas; pide a cada uno lo que puede dar. Una petición específica y con hipótesis ahorra tiempo y produce mejores consejos. Los patrocinadores usan capital político; se ganan con resultados y confianza, no con una petición. Las redes se mantienen con reciprocidad sostenida, no solo cuando necesitas ayuda."},{"id":"se2q","num":8,"lnum":4,"title":"Cierre del módulo 02","href":"se2q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Un plan de carrera se apoya en un objetivo observable y en evidencia definida de antemano. La visibilidad sana consiste en hacer comprensible el trabajo para que otros lo reutilicen. Mentores, patrocinadores y pares aportan ayuda distinta y complementaria. Las relaciones se cultivan antes de necesitarlas y sobreviven a los cambios de empresa."}]},{"num":"03","title":"Evaluaciones de desempeño","lessons":[{"id":"se3l1","num":9,"lnum":1,"title":"Cómo funciona una evaluación por dentro","href":"se3l1.html","kind":"lesson","search":"El ciclo completo Calibración y niveles Qué se evalúa de verdad La evaluación es un proceso organizativo, no una medida absoluta de tu valor. La evidencia se construye durante el periodo; la reunión final solo la recoge. La calibración compara personas y niveles, y siempre contiene política y sesgo. Se evalúan resultados y comportamientos, con especial peso en la consistencia."},{"id":"se3l2","num":10,"lnum":2,"title":"Escribir tu autoevaluación con evidencias","href":"se3l2.html","kind":"lesson","search":"Empieza por los resultados, no por las tareas Conecta el resultado con el nivel esperado Escribe para quien no te ve Describe resultados y efectos, no listas de actividades. Conecta cada logro con la expectativa concreta de tu nivel. Escribe para alguien sin contexto: proyectos, cifras y consecuencias explícitas. Reconocer un fallo y su aprendizaje aumenta la credibilidad del conjunto."},{"id":"se3l3","num":11,"lnum":3,"title":"Recibir feedback que incomoda","href":"se3l3.html","kind":"lesson","search":"Separa la señal del envoltorio Busca patrones, no veredictos Convierte la crítica en un experimento Busca el hecho detrás del tono; si no hay hecho, pide un ejemplo concreto. Los patrones repetidos en contextos distintos pesan más que una opinión aislada. Pregunta qué tendría que ver alguien para confiarte otro tipo de trabajo. Convierte cada crítica en un experimento pequeño, observable y con seguimiento."},{"id":"se3q","num":12,"lnum":4,"title":"Cierre del módulo 03","href":"se3q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La evaluación combina objetivos, evidencia, juicio y calibración a lo largo de todo el periodo. Una autoevaluación eficaz conecta resultados verificables con las expectativas del nivel. El feedback se interpreta buscando hechos y patrones, no reaccionando al tono. Los cambios pequeños y medibles convierten la crítica en mejora real."}]},{"num":"04","title":"Ascensos","lessons":[{"id":"se4l1","num":13,"lnum":1,"title":"Qué mira una promoción de verdad","href":"se4l1.html","kind":"lesson","search":"El ascenso no es antigüedad La brecha entre hacer y demostrar El patrocinio y el hueco Se asciende por capacidad demostrada para el siguiente nivel, no por permanencia. El trabajo de nivel superior debe ser visible y atribuible para contar como evidencia. El patrocinio del manager o de otra persona con influencia es parte del proceso. Falta de preparación y falta de vacante son problemas distintos con respuestas distintas."},{"id":"se4l2","num":14,"lnum":2,"title":"Construir el caso con tiempo","href":"se4l2.html","kind":"lesson","search":"Empieza por la rúbrica, no por el currículum Busca problemas que te presten el alcance Documenta mientras ocurre La rúbrica del siguiente nivel define qué evidencia necesitas y qué puedes ignorar. Los proyectos con dependencias y ambigüedad prestan el alcance que la promoción exige. Documentar mientras ocurre evita depender de la memoria en la evaluación. Alinear cada trimestre revela si el criterio es claro y si el patrocinio existe."},{"id":"se4l3","num":15,"lnum":3,"title":"El ascenso que no llega","href":"se4l3.html","kind":"lesson","search":"Pide la razón por escrito Distingue evidencia, oportunidad y presupuesto Decide con un plazo, no con una amenaza Pide razones concretas y por escrito; una negativa vaga no permite mejorar. Distingue brecha de evidencia, falta de oportunidad y ausencia de presupuesto. Cada causa tiene una respuesta distinta; aplicar la misma a todas desperdicia tiempo. Si te quedas, acuerda hitos y fecha; si te vas, evita ultimátums y prepara la salida."},{"id":"se4q","num":16,"lnum":4,"title":"Cierre del módulo 04","href":"se4q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Un ascenso es una apuesta por el siguiente nivel, no un premio por antigüedad. Resultados, alcance, comportamientos y patrocinio forman el caso completo. La evidencia se construye durante meses y se alinea con quien decide. Ante una negativa, separa falta de evidencia, de oportunidad y de presupuesto."}]},{"num":"05","title":"Prosperar en distintos entornos","lessons":[{"id":"se5l1","num":17,"lnum":1,"title":"Grandes empresas: navegar la escala","href":"se5l1.html","kind":"lesson","search":"La escala cambia el problema Escribir es la interfaz Movilidad y reputación interna La escala amplifica el impacto y la coordinación; ambas cosas se gestionan, no se evitan. Dividir problemas grandes en entregas adoptables es una habilidad central. La escritura clara funciona como interfaz para decidir entre equipos y husos horarios. La movilidad interna depende de una reputación que hay que construir más allá del equipo."},{"id":"se5l2","num":18,"lnum":2,"title":"Startups y scale-ups: crecer con el caos","href":"se5l2.html","kind":"lesson","search":"Ventaja y coste de la ambigüedad Prioriza por supervivencia Elige a las personas, no solo la idea La ambigüedad de una startup acelera el aprendizaje y elimina la mentoría estructurada. Priorizar por impacto en el negocio es una habilidad central, no una concesión. La deuda técnica aceptable se elige conociendo su coste y su plan de pago. Las personas y la cultura real pesan más que la idea o la ronda de inversión."},{"id":"se5l3","num":19,"lnum":3,"title":"Trabajo remoto e híbrido: confianza y visibilidad","href":"se5l3.html","kind":"lesson","search":"La confianza se demuestra con previsibilidad Escribe para que otros no te esperen Evita el sesgo de proximidad En remoto, la confianza se construye con previsibilidad y resultados visibles. Un mensaje útil incluye contexto, pregunta concreta y plazo. Los documentos son la memoria del equipo y reducen la dependencia de la proximidad. El sesgo de proximidad se corrige con prácticas deliberadas, no con buenas intenciones."},{"id":"se5q","num":20,"lnum":4,"title":"Cierre del módulo 05","href":"se5q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Las empresas grandes premian la coordinación, la escritura y la influencia entre equipos. Las startups ofrecen alcance y velocidad a cambio de ambigüedad y menor mentoría. La confianza remota se construye con previsibilidad, contexto escrito y resultados. El sesgo de proximidad requiere prácticas explícitas para no repetir privilegios de oficina."}]},{"num":"06","title":"Cambiar de trabajo","lessons":[{"id":"se6l1","num":21,"lnum":1,"title":"Buscar sin quemar el puente","href":"se6l1.html","kind":"lesson","search":"Define qué estás buscando Activa la red antes que los portales Prepara un relato coherente Un filtro escrito evita procesos dispersos y decisiones impulsivas. La red y las recomendaciones suelen superar a los portales en calidad y confianza. La búsqueda debe ser discreta hasta que tú decidas hacerla pública. Un relato honesto y constructivo explica la salida sin criticar al empleador actual."},{"id":"se6l2","num":22,"lnum":2,"title":"Entrevistas: preparar evidencia, no respuestas","href":"se6l2.html","kind":"lesson","search":"Prepara seis historias, no sesenta respuestas Practica en voz alta y con tiempo En entrevistas técnicas, piensa en voz alta Un repertorio pequeño de historias concretas cubre la mayoría de preguntas de comportamiento. Distingue tu contribución de la del equipo sin restarte mérito ni atribuirte lo ajeno. Practicar en voz alta mejora la claridad y reduce el relleno bajo presión. En pruebas técnicas, aclarar requisitos y pensar en voz alta pesa tanto como la solución."},{"id":"se6l3","num":23,"lnum":3,"title":"Negociar y salir bien","href":"se6l3.html","kind":"lesson","search":"Mira el paquete completo Negocia con información, no con faroles Salir con elegancia El valor de una oferta incluye base, variable, acciones, beneficios y costes personales. Negocia con datos de mercado y tu aportación; los faroles dañan la credibilidad. Si el salario está topado, busca otras palancas: inicio, título, alcance o flexibilidad. La salida también es parte de la reputación: avisa, documenta y despídete bien."},{"id":"se6q","num":24,"lnum":4,"title":"Cierre del módulo 06","href":"se6q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Un filtro previo y una red activa producen mejores procesos que la búsqueda impulsiva. Las entrevistas se preparan con historias concretas y práctica en voz alta. La negociación considera el paquete completo y se apoya en datos, no en faroles. Una salida elegante protege la reputación y deja la puerta abierta."}]},{"num":"07","title":"Sacar las cosas adelante","lessons":[{"id":"se7l1","num":25,"lnum":1,"title":"Priorizar antes de empezar","href":"se7l1.html","kind":"lesson","search":"Urgente no es sinónimo de importante Haz explícito el coste de cambiar Distingue tu prioridad de la prioridad del equipo La urgencia mide tiempo; la importancia mide efecto. No son lo mismo. Toda prioridad implica renunciar a algo; haz explícito ese coste. Agrupar interrupciones y proteger bloques reduce el coste de cambio. Acuerda el límite de capacidad con el equipo en lugar de absorberlo en silencio."},{"id":"se7l2","num":26,"lnum":2,"title":"Planificar en unidades pequeñas","href":"se7l2.html","kind":"lesson","search":"Empieza por el resultado, no por las tareas Divide en rebanadas que entreguen valor Estima con rangos y revisa Un resultado observable define cuándo terminas y qué se puede comprobar. Las rebanadas verticales producen feedback antes que las fases por capas. Los rangos comunican incertidumbre mejor que las estimaciones puntuales. Revisar y ajustar es parte del plan, no una señal de fracaso."},{"id":"se7l3","num":27,"lnum":3,"title":"Bloqueos y dependencias","href":"se7l3.html","kind":"lesson","search":"Nombra el bloqueo en voz alta Distingue dependencia de secuencia Escala cuando el coste de esperar supera el de decidir Nombrar el bloqueo pronto convierte un problema privado en una acción del equipo. No necesitas la solución para reportar; el contexto compartido ahorra horas. Una dependencia se puede reducir a un contrato y permitir trabajo en paralelo. Escala con contexto y opciones, no solo con la queja de que alguien no responde."},{"id":"se7q","num":28,"lnum":4,"title":"Cierre del módulo 07","href":"se7q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Priorizar exige renunciar y hacer visible el coste de las interrupciones. Los resultados observables y las rebanadas pequeñas reducen la incertidumbre. Los bloqueos se nombran pronto y se reducen a contratos cuando es posible. Escalar tiene sentido cuando el coste de esperar supera el de decidir."}]},{"num":"08","title":"Programar","lessons":[{"id":"se8l1","num":29,"lnum":1,"title":"Código que se lee","href":"se8l1.html","kind":"lesson","search":"Los nombres cargan el contexto La estructura importa más que la brevedad Lee tu código como un extraño El coste principal del código está en leerlo y modificarlo, no en escribirlo. Los nombres deben expresar intención y reducir la necesidad de contexto. La claridad estructural importa más que la brevedad o la elegancia superficial. Leer el diff como un extraño antes de revisar ahorra tiempo y mejora el diseño."},{"id":"se8l2","num":30,"lnum":2,"title":"Depurar con método","href":"se8l2.html","kind":"lesson","search":"Reproducir es la mitad del trabajo Aísla antes de explicar Corrige la causa y previene la clase Sin reproducción fiable, la corrección es una apuesta. Aislar el punto donde el estado cambia reduce el espacio de búsqueda. Cada corrección debería incluir una prueba que impida el regreso del fallo. Preguntar por la clase de fallo convierte un incidente en prevención."},{"id":"se8l3","num":31,"lnum":3,"title":"Revisar código sin fricción","href":"se8l3.html","kind":"lesson","search":"Separa lo bloqueante de lo preferible Revisa el diseño antes que las comas El autor también tiene responsabilidad Clasificar los comentarios como bloqueantes, sugerencias o preguntas reduce fricción. El diseño se revisa antes que el estilo; lo contrario optimiza lo accesorio. Diffs pequeños, con contexto y pruebas, se revisan mejor y más rápido. Preguntar por el contexto evita interpretar un comentario como ataque personal."},{"id":"se8q","num":32,"lnum":4,"title":"Cierre del módulo 08","href":"se8q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La legibilidad reduce el coste de leer, corregir y modificar el código. Depurar es reproducir, aislar, comprobar hipótesis y prevenir la clase de fallo. La revisión separa lo bloqueante de lo preferible y empieza por el diseño. Un buen diff, con contexto y pruebas, mejora la calidad de la revisión."}]},{"num":"09","title":"Desarrollo de software","lessons":[{"id":"se9l1","num":33,"lnum":1,"title":"Del problema al requisito","href":"se9l1.html","kind":"lesson","search":"Empieza por el problema, no por la solución Escribe requisitos observables Negocia el alcance, no la calidad Un requisito nace de un problema y de la alternativa que el usuario ya usa. Los requisitos deben ser observables y comprobables, no adjetivos vagos. Rendimiento, seguridad, accesibilidad y operación también son requisitos. Cuando el tiempo aprieta, recorta alcance antes que calidad."},{"id":"se9l2","num":34,"lnum":2,"title":"Entregar en rebanadas","href":"se9l2.html","kind":"lesson","search":"Reduce el lote, no el estándar Usa banderas y despliegues graduales Cierra el ciclo con métricas Lotes pequeños hacen visible el error antes y permiten corregir barato. Lo mínimo valioso permite completar una tarea real, no solo demonstrar tecnología. Las banderas reducen el radio de impacto, pero deben retirarse cuando ya no sirven. Una entrega se cierra cuando se comprueba el efecto esperado con métricas o uso real."},{"id":"se9l3","num":35,"lnum":3,"title":"Colaborar con producto y diseño","href":"se9l3.html","kind":"lesson","search":"Comparte el problema antes de la solución Traduce entre lenguajes Acuerda cómo se decide Involucrar a ingeniería antes de fijar la solución amplía las alternativas. Cada disciplina debe traducir su criterio al lenguaje de las demás. Los casos límite se conversan antes del diseño final, no después del lanzamiento. La claridad sobre quién decide evita consensos innecesarios y conflictos sordos."},{"id":"se9q","num":36,"lnum":4,"title":"Cierre del módulo 09","href":"se9q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Los requisitos traducen problemas y usuarios en comportamientos comprobables. Entregar en rebanadas reduce el riesgo y produce aprendizaje antes. Las banderas y los despliegues graduales limitan el impacto, pero deben limpiarse. Producto, diseño e ingeniería colaboran mejor cuando comparten el problema y las decisiones."}]},{"num":"10","title":"Herramientas del ingeniero productivo","lessons":[{"id":"se10l1","num":37,"lnum":1,"title":"El entorno como extensión","href":"se10l1.html","kind":"lesson","search":"Aprende las herramientas que usas a diario Configura para tu forma de trabajar Automatiza lo que repites, no lo que disfrutas La productividad depende de reducir fricción entre entender, probar y repetir. Aprende los atajos y comandos que usas a diario, no todos los posibles. Un entorno reproducible evita depender de la memoria y facilita el cambio de máquina. Automatiza tareas frecuentes o propensas a error, no cualquier cosa que se repita una vez."},{"id":"se10l2","num":38,"lnum":2,"title":"Git como registro de decisiones","href":"se10l2.html","kind":"lesson","search":"Commits pequeños con intención Ramas y revisión sin ceremonia El historial se puede auditar Un commit debe representar una intención acotada y explicar el porqué. Ramas cortas y revisión proporcional al riesgo reducen la fricción de integración. Proteger la rama principal con pruebas automáticas evita regresiones costosas. Un historial limpio permite investigar fallos y revertir con seguridad."},{"id":"se10l3","num":39,"lnum":3,"title":"Asistentes de IA sin delegar el criterio","href":"se10l3.html","kind":"lesson","search":"Úsalo donde el resultado es comprobable Da contexto y pide alternativas Verifica, prueba y documenta La IA aporta más donde el resultado se puede comprobar rápido. En lógica sutil, seguridad o datos, una respuesta plausible puede ser un riesgo. El contexto específico y las alternativas mejoran la calidad de la salida. Todo código generado pasa por lectura, pruebas, revisión y documentación."},{"id":"se10q","num":40,"lnum":4,"title":"Cierre del módulo 10","href":"se10q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Un entorno bien aprendido reduce la fricción entre pensar, probar y repetir. Git registra decisiones; los commits pequeños y explicados facilitan revisar y revertir. La IA acelera tareas verificables y exige más cautela donde el error es sutil. El código generado no está exento de pruebas, revisión ni responsabilidad."}]},{"num":"11","title":"Sacar las cosas adelante","lessons":[{"id":"se11l1","num":41,"lnum":1,"title":"Navegar la ambigüedad","href":"se11l1.html","kind":"lesson","search":"Convierte la vaguedad en preguntas Propón un marco, no una certeza Decide con el coste de equivocarse La ambigüedad se reduce con preguntas concretas y conversaciones, no con más análisis solitario. Un marco con hipótesis, alcance y métricas permite avanzar sin falsa certeza. Definir lo que queda fuera protege el foco y las expectativas. La velocidad correcta depende del coste de equivocarse y de la reversibilidad."},{"id":"se11l2","num":42,"lnum":2,"title":"Liderar sin autoridad","href":"se11l2.html","kind":"lesson","search":"Empieza por los incentivos del otro Haz que la adopción sea fácil Sostén la confianza con hechos La influencia empieza por entender los incentivos y restricciones del otro equipo. Una propuesta que no resuelve un problema ajeno no se adopta, por buena que sea. Reducir el coste de probar y permitir revertir aumenta la adopción. La confianza se sostiene con hechos, plazos pequeños y responsabilidad compartida."},{"id":"se11l3","num":43,"lnum":3,"title":"Delegar y desbloquear","href":"se11l3.html","kind":"lesson","search":"Delega resultados, no tareas sueltas Ajusta el acompañamiento al riesgo Desbloquea sin recuperar el trabajo Delegar es transferir un resultado con propósito, criterio y autoridad. El acompañamiento debe ajustarse al riesgo y a la experiencia de la persona. Delegar solo lo aburrido te convierte en cuello de botella y frena el desarrollo ajeno. Desbloquear es dar pistas y conexiones, no recuperar el trabajo."},{"id":"se11q","num":44,"lnum":4,"title":"Cierre del módulo 11","href":"se11q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La ambigüedad se gestiona con preguntas, marcos y decisiones revisables. Liderar sin autoridad exige entender incentivos y reducir el coste de adopción. Delegar resultados con contexto desarrolla a otros y evita cuellos de botella. El acompañamiento se ajusta al riesgo y a la experiencia, no a la comodidad."}]},{"num":"12","title":"Colaboración y trabajo en equipo","lessons":[{"id":"se12l1","num":45,"lnum":1,"title":"Comunicación que reduce incertidumbre","href":"se12l1.html","kind":"lesson","search":"Escribe para que se pueda actuar Escucha para entender, no para responder Cierra el circuito Un mensaje útil incluye contexto, petición concreta y plazo. El canal debe corresponder a la importancia y durabilidad de la decisión. Escuchar implica comprobar lo entendido y preguntar por lo no dicho. Cerrar el circuito con acuerdos escritos evita versiones divergentes."},{"id":"se12l2","num":46,"lnum":2,"title":"Desacuerdos productivos","href":"se12l2.html","kind":"lesson","search":"Separa la idea de la persona Haz explícito el desacuerdo Repara después del conflicto El desacuerdo sano se dirige a ideas y evidencia, no a personas. Declarar el objetivo común convierte el conflicto en búsqueda conjunta. Nombrar el desacuerdo a tiempo evita filtraciones pasivo-agresivas. Reparar el efecto emocional protege la relación para futuras decisiones."},{"id":"se12l3","num":47,"lnum":3,"title":"Mentoría y retroalimentación","href":"se12l3.html","kind":"lesson","search":"Empieza por el hecho, no por la etiqueta Pregunta antes de aconsejar Acuerda un siguiente paso pequeño La retroalimentación útil parte de hechos recientes y específicos, no de etiquetas. Preguntar antes de aconsejar evita consejos genéricos y descubre restricciones. Una buena conversación deja a la persona con más opciones, no más dependencia. Acordar un siguiente paso pequeño y revisarlo convierte la mentoría en práctica."},{"id":"se12q","num":48,"lnum":4,"title":"Cierre del módulo 12","href":"se12q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La comunicación eficaz deja contexto, petición y plazo en el canal adecuado. El desacuerdo productivo se centra en ideas y evidencia, y se repara si hiere. La retroalimentación parte de hechos y termina en un siguiente paso acordado. Mentorizar es ampliar el criterio ajeno, no crear dependencia."}]},{"num":"13","title":"Ingeniería de software","lessons":[{"id":"se13l1","num":49,"lnum":1,"title":"Diseñar antes de código","href":"se13l1.html","kind":"lesson","search":"El documento como herramienta de pensamiento Compara opciones, no defiendas una Separa decisiones reversibles de irreversibles Escribir el diseño revela supuestos y dependencias que la intuición oculta. Un diseño útil compara opciones reales, incluida la de no hacer nada. Cada opción debe explicar su coste, su riesgo y qué problema futuro acepta. La reversibilidad de la decisión determina cuánto análisis merece."},{"id":"se13l2","num":50,"lnum":2,"title":"Deuda técnica con intención","href":"se13l2.html","kind":"lesson","search":"No toda deuda es igual El interés se paga en velocidad Paga antes de que el coste se dispare La deuda técnica es un intercambio consciente, no una categoría moral. El interés se paga en velocidad, miedo al cambio e incidentes repetidos. Conviene pagar cuando el coste futuro supera el beneficio presente, no por estética. Toda deuda aceptada necesita registro, dueño y revisión."},{"id":"se13l3","num":51,"lnum":3,"title":"Mantener un sistema vivo","href":"se13l3.html","kind":"lesson","search":"Observa antes de refactorizar Refactoriza en pasos pequeños Distribuye el conocimiento La prioridad de mantenimiento sale de uso, incidentes y coste de soporte, no de la estética. Refactorizar en pasos desplegables reduce el riesgo y facilita revertir. Las pruebas deben cubrir los comportamientos que se van a tocar. Distribuir el conocimiento evita que el sistema dependa de una sola persona."},{"id":"se13q","num":52,"lnum":4,"title":"Cierre del módulo 13","href":"se13q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Diseñar es comparar opciones y hacer explícitos los trade-offs antes de codificar. La deuda técnica se gestiona por impacto, con registro y plan de pago. Mantener exige observar uso e incidentes antes de refactorizar. Los cambios pequeños y el conocimiento distribuido hacen sostenible un sistema."}]},{"num":"14","title":"Pruebas","lessons":[{"id":"se14l1","num":53,"lnum":1,"title":"La pirámide y sus límites","href":"se14l1.html","kind":"lesson","search":"Qué prueba cada nivel La pirámide no es una ley Dónde poner el esfuerzo Cada nivel de prueba compra un tipo distinto de confianza. La proporción correcta depende del riesgo y del coste de mantenimiento. Prioriza caminos críticos, datos sensibles y fallos recurrentes. Una suite grande y frágil puede dar menos confianza que una pequeña y estable."},{"id":"se14l2","num":54,"lnum":2,"title":"Pruebas que encuentran fallos","href":"se14l2.html","kind":"lesson","search":"Piensa en límites y secuencias Haz que el fallo sea fácil de entender Prueba también lo que no debe ocurrir Los fallos se concentran en límites, secuencias y condiciones externas. Una prueba por clase de problema cubre más que muchas variaciones triviales. El mensaje de fallo debe explicar qué se esperaba y por qué importa. Las pruebas negativas protegen permisos, datos y operaciones irreversibles."},{"id":"se14l3","num":55,"lnum":3,"title":"Pruebas inestables y confianza","href":"se14l3.html","kind":"lesson","search":"Controla el tiempo y el entorno Aísla el estado compartido Cuarentena y reparación La inestabilidad tiene una fuente de variación concreta: tiempo, orden, datos o entorno. Inyectar relojes y aislar el estado hacen que las pruebas sean reproducibles. Una prueba inestable se cuarentena con dueño y plazo, no se ignora. La confianza en la suite es un activo que se pierde cuando el rojo deja de significar algo."},{"id":"se14q","num":56,"lnum":4,"title":"Cierre del módulo 14","href":"se14q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Cada nivel de prueba aporta una confianza distinta; la proporción depende del riesgo. Las pruebas valiosas cubren límites, secuencias, errores y lo que no debe ocurrir. La inestabilidad se combate controlando tiempo, estado, datos y entorno. La confianza en la suite se protege con reparación y cuarentena responsable."}]},{"num":"15","title":"Arquitectura de software","lessons":[{"id":"se15l1","num":57,"lnum":1,"title":"Fronteras y acoplamiento","href":"se15l1.html","kind":"lesson","search":"La frontera reduce el acoplamiento Organiza por cambio, no por tecnología Prueba la arquitectura con escenarios Una frontera explícita reduce el acoplamiento oculto y permite cambios localizados. La arquitectura y la estructura de equipos se condicionan mutuamente. Organiza por capacidades de negocio y cambios probables, no por moda tecnológica. Los escenarios de cambio validan la arquitectura mejor que un diagrama estático."},{"id":"se15l2","num":58,"lnum":2,"title":"APIs y contratos","href":"se15l2.html","kind":"lesson","search":"El contrato incluye semántica Versiona sin romper Deprecar con un plan El contrato incluye forma, semántica, errores y garantías de consistencia. Los cambios compatibles preservan expectativas; los que no, requieren versión y tiempo. Las pruebas de contrato y el registro de consumidores permiten retirar con seguridad. Deprecar es un proyecto con fecha, alternativa, migración y seguimiento."},{"id":"se15l3","num":59,"lnum":3,"title":"Evolucionar sin reescribir","href":"se15l3.html","kind":"lesson","search":"La reescritura promete y cobra El patrón del estrangulador Mide el avance por resultados La reescritura subestima el conocimiento acumulado y el coste de la convivencia. El estrangulador permite migrar por partes, comparar y revertir. La fachada añade complejidad; úsala cuando el riesgo de un cambio total sea alto. El avance se mide por tráfico y funcionalidades migradas, y termina cuando se apaga lo viejo."},{"id":"se15q","num":60,"lnum":4,"title":"Cierre del módulo 15","href":"se15q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Las fronteras explícitas reducen el acoplamiento oculto y permiten cambios localizados. Las APIs son contratos con semántica, errores y garantías, no solo esquemas. La evolución incremental con estrangulador reduce el riesgo de las migraciones. Una migración termina cuando el sistema anterior se apaga y se mide el resultado."}]},{"num":"16","title":"Gestión de proyectos","lessons":[{"id":"se16l1","num":61,"lnum":1,"title":"Planificar con incertidumbre","href":"se16l1.html","kind":"lesson","search":"Empieza por el resultado y los hitos Estima con rangos y supuestos Reserva capacidad para lo imprevisto Un plan es una hipótesis con hitos comprobables, no una promesa exacta. Los hitos deben producir señales de avance, no solo fechas. Los supuestos y rangos hacen visible la incertidumbre y permiten comunicarla. Reservar margen protege la calidad y absorbe lo imprevisto."},{"id":"se16l2","num":62,"lnum":2,"title":"Dependencias y riesgos","href":"se16l2.html","kind":"lesson","search":"Haz visible el riesgo Distingue dependencia de riesgo Asigna dueño y plan Un riesgo se gestiona cuando está escrito, tiene señal temprana y dueño. Las dependencias se aseguran con contratos y fechas; los riesgos, con mitigación. Definir qué necesitas y qué pasa si llega tarde evita esperas pasivas. Aceptar un riesgo es válido si la decisión es explícita y tiene contingencia."},{"id":"se16l3","num":63,"lnum":3,"title":"Estado sin teatro","href":"se16l3.html","kind":"lesson","search":"Reporta resultados, no actividad Nombra lo que no va bien Pide la decisión que necesitas El estado se mide por resultados verificables, no por actividad. Las malas noticias tempranas permiten reaccionar; las tardías se convierten en crisis. Un informe útil termina en una decisión o petición concreta. Adapta el detalle a la audiencia sin cambiar los hechos."},{"id":"se16q","num":64,"lnum":4,"title":"Cierre del módulo 16","href":"se16q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Un plan es una hipótesis con hitos comprobables y margen para lo imprevisto. Los riesgos se escriben, tienen señal temprana y dueño; las dependencias se aseguran. El estado reporta resultados, nombra lo que va mal y pide una decisión. La transparencia temprana es más valiosa que un informe optimista."}]},{"num":"17","title":"Llevar a producción","lessons":[{"id":"se17l1","num":65,"lnum":1,"title":"El camino a producción","href":"se17l1.html","kind":"lesson","search":"Prepara el despliegue como un cambio Despliega gradualmente Define qué observarás Un despliegue necesita versión, responsable, notas y plan de reversión. Las migraciones de datos se hacen en pasos compatibles y reversibles. El despliegue gradual y las banderas reducen el radio de impacto. Las señales de éxito y los criterios de reversión se definen antes de desplegar."},{"id":"se17l2","num":66,"lnum":2,"title":"Despliegues seguros","href":"se17l2.html","kind":"lesson","search":"Automatiza lo repetible Usa un despliegue canario Permite revertir sin drama La automatización reduce la variabilidad y libera atención para el criterio. Un canario compara una exposición pequeña con una línea base antes de ampliar. El tamaño y la duración del canario dependen del tráfico y del riesgo. Revertir debe ser una operación normal, documentada y sin castigo."},{"id":"se17l3","num":67,"lnum":3,"title":"Incidentes y guardias","href":"se17l3.html","kind":"lesson","search":"Separa mitigar de investigar Comunica con hechos y cadencia Aprende sin buscar culpables Durante un incidente, mitigar el impacto va antes que entender la causa raíz. Roles claros y comunicación con cadencia reducen el caos y la incertidumbre. El postmortem busca condiciones sistémicas, no culpables individuales. Las acciones correctivas necesitan dueño, fecha y seguimiento."},{"id":"se17q","num":68,"lnum":4,"title":"Cierre del módulo 17","href":"se17q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Un despliegue seguro incluye verificación, observabilidad, reversión y criterios claros. La automatización y el despliegue gradual reducen la variabilidad y el impacto. En un incidente, primero se mitiga; la causa se investiga después. El aprendizaje sin culpa y con acciones seguidas mejora la fiabilidad futura."}]},{"num":"18","title":"Gestión de stakeholders","lessons":[{"id":"se18l1","num":69,"lnum":1,"title":"Mapear expectativas","href":"se18l1.html","kind":"lesson","search":"Identifica a quién afecta y quién decide Adapta el mensaje, no los hechos Construye la relación antes de necesitarla No todos los stakeholders necesitan el mismo detalle ni la misma frecuencia. Identifica también a los afectados invisibles antes de que aparezcan tarde. Adapta el nivel de detalle, pero mantén hechos coherentes entre audiencias. La relación se construye antes de la crisis, con comunicación regular y reciprocidad."},{"id":"se18l2","num":70,"lnum":2,"title":"Negociar prioridades","href":"se18l2.html","kind":"lesson","search":"Traduce las peticiones a resultados Usa criterios compartidos Decide y comunica el coste Traduce urgencias a resultados, coste y alternativa antes de priorizar. Si todo es prioritario, el equipo acabará decidiendo por agotamiento. Los criterios compartidos convierten la discusión de opiniones en una comparación. Comunicar lo que se pospone y su riesgo forma parte de la decisión."},{"id":"se18l3","num":71,"lnum":3,"title":"Malas noticias a tiempo","href":"se18l3.html","kind":"lesson","search":"Avisa cuando aún hay margen Lleva hechos, impacto y opciones Cuida la forma sin suavizar el fondo La mala noticia se comunica cuando aún hay margen de reacción, no cuando es irreversible. Un mensaje útil incluye hechos, impacto y opciones. La claridad puede ser respetuosa; suavizar el fondo no ayuda a decidir. La confianza se reconstruye con seguimiento y cumplimiento posterior."},{"id":"se18q","num":72,"lnum":4,"title":"Cierre del módulo 18","href":"se18q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Cada stakeholder necesita un nivel de detalle y una frecuencia distintos. Los afectados invisibles deben identificarse antes de que aparezcan con quejas. Priorizar exige criterios compartidos y comunicar lo que se pospone. Las malas noticias llegan mejor cuando hay margen, hechos y opciones."}]},{"num":"19","title":"Estructura del equipo","lessons":[{"id":"se19l1","num":73,"lnum":1,"title":"Diseñar equipos con propósito","href":"se19l1.html","kind":"lesson","search":"La misión define el trabajo El alcance y las interfaces La guardia y la sostenibilidad Una misión concreta permite decidir qué entra, qué queda fuera y cómo se mide. El alcance define la propiedad; las interfaces definen cómo se accede a ella. Pocas interfaces explícitas reducen el ruido y la ambigüedad. Quien opera el sistema debe participar en su diseño y tener tiempo para mantenerlo."},{"id":"se19l2","num":74,"lnum":2,"title":"Ownership y límites","href":"se19l2.html","kind":"lesson","search":"Ownership incluye la operación Los límites permiten velocidad Colabora sin disolver la propiedad Ownership incluye operación, coste, evolución y capacidad de decir no. Los límites claros permiten desplegar y decidir sin consenso permanente. Las excepciones de emergencia deben tener un protocolo y una devolución de control. La colaboración sana se apoya en interfaces usables, no en disolver la propiedad."},{"id":"se19l3","num":75,"lnum":3,"title":"Contratar y crecer","href":"se19l3.html","kind":"lesson","search":"Empieza por la brecha, no por el título Diseña un proceso con señales relevantes La incorporación es parte de la contratación La contratación empieza por la capacidad que falta, no por el título. Cada etapa del proceso debe medir una señal distinta y relevante. La consistencia y la formación de entrevistadores reducen sesgos y ruido. El onboarding y el desarrollo posterior forman parte de la inversión de contratar."},{"id":"se19q","num":76,"lnum":4,"title":"Cierre del módulo 19","href":"se19q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Un equipo necesita misión, alcance, interfaces y responsabilidad operativa. El ownership claro incluye decidir, operar y decir no, con límites explícitos. Contratar responde a una brecha de capacidad, no a una vacante heredada. El onboarding y el desarrollo convierten una contratación en capacidad real."}]},{"num":"20","title":"Dinámica de equipo","lessons":[{"id":"se20l1","num":77,"lnum":1,"title":"Confianza y seguridad psicológica","href":"se20l1.html","kind":"lesson","search":"La seguridad se demuestra en lo pequeño El respeto no exige acuerdo El propósito compartido orienta La seguridad psicológica se construye en la reacción cotidiana ante errores y preguntas. Respeto no significa acuerdo: la crítica se dirige al trabajo, no a la persona. Un propósito concreto convierte el desacuerdo en una herramienta útil. Celebrar solo los aciertos enseña al equipo a ocultar los riesgos."},{"id":"se20l2","num":78,"lnum":2,"title":"Motivación más allá del salario","href":"se20l2.html","kind":"lesson","search":"La autonomía necesita límites El dominio se cultiva con feedback El propósito se conecta con el usuario La autonomía es margen para decidir el cómo dentro de un resultado y límites claros. El dominio crece con retos ajustados, feedback específico y tiempo de práctica. Conectar el trabajo con el usuario sostiene la motivación en las semanas difíciles. El propósito debe ser honesto; el entusiasmo fingido se detecta y desgasta."},{"id":"se20l3","num":79,"lnum":3,"title":"Retrospectivas que cambian algo","href":"se20l3.html","kind":"lesson","search":"Mirar sin buscar culpables Elige pocos cambios Revisa el efecto y ajusta el formato La retrospectiva mira hechos y condiciones, no culpables. Pocas acciones con dueño y fecha producen más cambio que una lista larga. Las acciones deben formularse como experimentos observables. Cada retrospectiva revisa el efecto de la anterior y ajusta el formato."},{"id":"se20q","num":80,"lnum":4,"title":"Cierre del módulo 20","href":"se20q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La seguridad psicológica depende de cómo se reacciona ante errores, preguntas y desacuerdos. La motivación sostenida combina autonomía con límites, dominio y propósito honesto. Las retrospectivas producen cambio cuando eligen pocas acciones y las revisan. Un equipo que aprende examina condiciones y experimenta, no busca culpables."}]},{"num":"21","title":"Entender el negocio","lessons":[{"id":"se21l1","num":81,"lnum":1,"title":"Cómo gana dinero la empresa","href":"se21l1.html","kind":"lesson","search":"La propuesta de valor Ingresos y costes El margen y la sostenibilidad Entender la propuesta de valor ayuda a priorizar funciones que refuerzan el negocio. Cada modelo de ingresos tiene incentivos y métricas dominantes distintas. Ingresar no es ganar: el margen determina qué crecimiento es sostenible. El coste humano forma parte de la sostenibilidad del modelo."},{"id":"se21l2","num":82,"lnum":2,"title":"Métricas que importan","href":"se21l2.html","kind":"lesson","search":"Elige una métrica que refleje valor Descompón en palancas Mide también el coste y el riesgo La métrica norte debe reflejar valor real y ser difícil de manipular. Descomponer la métrica en palancas permite decidir qué mover y verificar el efecto. Combina métricas de negocio, fiabilidad y coste para no optimizar una sola dimensión. Un umbral convierte un dato en una señal accionable."},{"id":"se21l3","num":83,"lnum":3,"title":"Decisiones técnicas con lente de negocio","href":"se21l3.html","kind":"lesson","search":"Conecta el trabajo con una decisión Elige el momento correcto Mide el retorno, no solo la entrega Conecta cada mejora técnica con una decisión o resultado que cambia. El momento de una inversión técnica puede importar tanto como su calidad. La secuencia se decide con producto y negocio, no en aislamiento. Define el retorno antes de empezar, incluyendo el coste evitado."},{"id":"se21q","num":84,"lnum":4,"title":"Cierre del módulo 21","href":"se21q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios El modelo de negocio conecta propuesta de valor, clientes, ingresos, costes y margen. Una métrica norte debe reflejar valor real y descomponerse en palancas accionables. Las decisiones técnicas se orientan por impacto, coste, riesgo y momento. El retorno incluye lo que se evita, no solo lo que se entrega."}]},{"num":"22","title":"Colaboración","lessons":[{"id":"se22l1","num":85,"lnum":1,"title":"Influir en toda la organización","href":"se22l1.html","kind":"lesson","search":"Piensa en el sistema, no solo en tu equipo Construye coaliciones, no decretos Mide el efecto organizacional La influencia organizacional empieza por entender el sistema y sus incentivos. Las coaliciones sostienen los cambios mejor que los decretos aislados. Un piloto con un equipo dispuesto reduce el riesgo y facilita la adopción. El impacto se mide en decisiones y desbloqueos, no en código escrito."},{"id":"se22l2","num":86,"lnum":2,"title":"Escribir para escalar criterio","href":"se22l2.html","kind":"lesson","search":"Escribe para el lector que no estuvo Documenta decisiones, no solo conocimiento Haz que la adopción sea parte del documento Un documento debe entenderse sin la reunión donde se discutió. El registro de decisiones evita repetir alternativas ya descartadas. Toda decisión necesita supuestos y una fecha de revisión. La adopción se diseña con ejemplos, migración y soporte, no solo con una regla."},{"id":"se22l3","num":87,"lnum":3,"title":"Mentoría y multiplicación","href":"se22l3.html","kind":"lesson","search":"Enseña el porqué, no solo el cómo Cede el protagonismo Crea sistemas que sobrevivan Enseñar el razonamiento permite resolver problemas nuevos, no solo repetir pasos. Ceder protagonismo construye la reputación y la autonomía de otras personas. Aceptar decisiones distintas no críticas es parte de desarrollar criterio ajeno. El conocimiento debe distribuirse en personas, documentos y automatización."},{"id":"se22q","num":88,"lnum":4,"title":"Cierre del módulo 22","href":"se22q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La influencia organizacional se construye entendiendo incentivos y creando coaliciones. La escritura escala criterio cuando es comprensible sin contexto previo. Multiplicar exige enseñar el porqué, ceder protagonismo y distribuir conocimiento. El legado de un sénior son personas y sistemas que funcionan sin él."}]},{"num":"23","title":"Ingeniería de software","lessons":[{"id":"se23l1","num":89,"lnum":1,"title":"Estrategia técnica","href":"se23l1.html","kind":"lesson","search":"Empieza por el diagnóstico Elige pocas apuestas Revisa con evidencia La estrategia técnica nace de un diagnóstico con datos y conversaciones. Pocas apuestas explícitas orientan más que una lista larga de prioridades. Cada apuesta tiene resultado, dueño, medida y una renuncia asociada. La estrategia se revisa con evidencia y se comunica a distintos niveles."},{"id":"se23l2","num":90,"lnum":2,"title":"Estándares y plataformas","href":"se23l2.html","kind":"lesson","search":"Estandariza lo que reduce coste La plataforma debe ser el camino fácil Deja una vía de escape Un estándar se justifica cuando reduce coste, incidentes o duplicación. La plataforma debe hacer que el camino correcto sea el más fácil. Una vía de escape explícita permite innovar sin fragmentar la organización. Muchas excepciones son una señal de que el camino común necesita rediseño."},{"id":"se23l3","num":91,"lnum":3,"title":"Calidad a escala","href":"se23l3.html","kind":"lesson","search":"Haz que lo correcto sea el default Automatiza la detección Aprende de los fallos Los defaults seguros reducen la dependencia de la disciplina individual. La automatización detecta lo repetible y reserva el criterio humano para lo ambiguo. Las alertas deben ser accionables; el ruido destruye la confianza. La calidad mejora cuando los fallos se analizan y cambian el sistema."},{"id":"se23q","num":92,"lnum":4,"title":"Cierre del módulo 23","href":"se23q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La estrategia técnica parte de un diagnóstico y elige pocas apuestas con renuncias. Los estándares se justifican por coste, riesgo o duplicación, no por gusto. Una plataforma útil hace fácil el camino correcto y permite excepciones explícitas. La calidad a escala se diseña con defaults, herramientas y aprendizaje."}]},{"num":"24","title":"Sistemas de software fiables","lessons":[{"id":"se24l1","num":93,"lnum":1,"title":"SLIs, SLOs y presupuesto de error","href":"se24l1.html","kind":"lesson","search":"Define el indicador correcto Acuerda el objetivo Usa el presupuesto de error El SLI debe reflejar la experiencia del usuario, no solo la salud del servidor. El SLO se acuerda según necesidad y coste, no se fija en el máximo técnico. El presupuesto de error permite decidir cuándo arriesgar y cuándo estabilizar. Un objetivo sin consecuencias operativas no mejora la fiabilidad."},{"id":"se24l2","num":94,"lnum":2,"title":"Resiliencia y degradación","href":"se24l2.html","kind":"lesson","search":"Pon límites a las llamadas Diseña la degradación Recupera sin amplificar el daño Timeouts, reintentos limitados y circuit breakers evitan que un fallo se propague. La degradación controlada preserve parte del valor y debe probarse antes de necesitarla. La recuperación puede amplificar el daño si no se controlan reintentos y colas. La idempotencia y el backoff con jitter protegen los datos y la capacidad."},{"id":"se24l3","num":95,"lnum":3,"title":"Capacidad y coste","href":"se24l3.html","kind":"lesson","search":"Mide la demanda real Conoce el coste unitario Optimiza después de medir La capacidad se planifica con demanda real y picos, no con intuición. El coste unitario permite distinguir crecimiento de ineficiencia. El coste total incluye personas y operación, no solo infraestructura. Optimiza después de medir y revisa capacidad y coste periódicamente."},{"id":"se24q","num":96,"lnum":4,"title":"Cierre del módulo 24","href":"se24q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios Los SLIs reflejan la experiencia del usuario; los SLOs acuerdan el nivel y sus consecuencias. El presupuesto de error convierte la fiabilidad en una decisión de prioridades. La resiliencia se diseña con límites, degradación y recuperación controlada. Capacidad y coste se gestionan con demanda real y coste unitario, no con intuición."}]},{"num":"25","title":"Arquitectura de software","lessons":[{"id":"se25l1","num":97,"lnum":1,"title":"Arquitectura a escala organizativa","href":"se25l1.html","kind":"lesson","search":"La ley de Conway, bien usada Plataforma y autonomía Gobierno sin burocracia La arquitectura refleja la estructura de equipos y comunicación; se puede diseñar. Una plataforma común reduce duplicación, pero no debe convertirse en cuello de botella. La autonomía necesita estándares comunes para que el conjunto sea operable. El gobierno técnico debe habilitar decisiones, no aprobar cada cambio."},{"id":"se25l2","num":98,"lnum":2,"title":"Migraciones y visión de largo plazo","href":"se25l2.html","kind":"lesson","search":"Define el estado futuro y su beneficio Elige la primera frontera Planifica la convivencia y la retirada La visión de largo plazo debe explicar un beneficio medible, no solo una tecnología. La primera frontera se elige por aprendizaje y riesgo acotado, no por facilidad o prestigio. La convivencia entre sistemas tiene coste y necesita un plan explícito. La migración termina cuando el sistema anterior se apaga."},{"id":"se25l3","num":99,"lnum":3,"title":"Construir, comprar o adoptar","href":"se25l3.html","kind":"lesson","search":"Identifica tu ventaja Evalúa el coste total Diseña la salida Construye cuando la capacidad es parte de tu ventaja y necesitas control. Compra o adopta cuando la capacidad es de soporte y no diferencia tu producto. Compara el coste total a varios años, incluyendo mantenimiento y salida. Diseña una vía de salida para toda dependencia externa relevante."},{"id":"se25q","num":100,"lnum":4,"title":"Cierre del módulo 25","href":"se25q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La arquitectura organizativa alinea dominios, equipos, plataforma y gobierno. Las migraciones necesitan visión, primera frontera, convivencia y retirada. Construir, comprar o adoptar depende de la diferenciación y del coste total. Toda dependencia externa relevante necesita una vía de salida."}]},{"num":"26","title":"Aprendizaje continuo","lessons":[{"id":"se26l1","num":101,"lnum":1,"title":"Aprender de forma deliberada","href":"se26l1.html","kind":"lesson","search":"Elige una habilidad concreta Practica en el borde de tu comodidad Reflexiona y ajusta El aprendizaje deliberado empieza por una habilidad concreta y conectada al trabajo. La práctica útil ocurre en el borde de la comodidad, con feedback relativamente rápido. Los errores deben producir información, no castigo ni vergüenza. La reflexión escrita convierte la experiencia en un modelo mental reutilizable."},{"id":"se26l2","num":102,"lnum":2,"title":"Leer, escribir y enseñar","href":"se26l2.html","kind":"lesson","search":"Lee con una pregunta Escribe para pensar Enseñar para descubrir huecos Leer con una pregunta concreta convierte el contenido en aprendizaje aplicable. Escribir revela lo que crees entender y no puedes explicar. Enseñar descubre huecos y obliga a estructurar el conocimiento. La amplitud de lecturas alimenta la intuición en roles de mayor alcance."},{"id":"se26l3","num":103,"lnum":3,"title":"Reinventarse sin empezar de cero","href":"se26l3.html","kind":"lesson","search":"Identifica lo transferible Acepta una curva de aprendizaje Elige un puente, no un salto La reinvención reutiliza habilidades transferibles en lugar de borrar la experiencia. Aceptar una curva de aprendizaje implica tolerar menor productividad al inicio. Un puente entre lo viejo y lo nuevo reduce el riesgo del cambio. La combinación de experiencia previa y dominio nuevo puede ser una ventaja única."},{"id":"se26q","num":104,"lnum":4,"title":"Cierre del módulo 26","href":"se26q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios El aprendizaje deliberado combina objetivo, práctica difícil, feedback y reflexión. Leer, escribir y enseñar se refuerzan y revelan puntos ciegos. La reinvención reutiliza habilidades transferibles y acepta una curva de aprendizaje. Un puente entre la experiencia y lo nuevo reduce el riesgo del cambio."}]},{"num":"27","title":"Lecturas y siguientes pasos","lessons":[{"id":"se27l1","num":105,"lnum":1,"title":"Cómo elegir qué leer","href":"se27l1.html","kind":"lesson","search":"Empieza por un problema, no por una lista Alterna profundidad y amplitud Convierte la lectura en acción Elige lecturas a partir de un problema real, no de una lista genérica. Los fundamentos envejecen mejor que las herramientas y sostienen la amplitud. Cada formato —libro, artículo, conversación— tiene una profundidad distinta. La lectura se convierte en aprendizaje cuando se traduce en una acción o discusión."},{"id":"se27l2","num":106,"lnum":2,"title":"Construir un plan personal","href":"se27l2.html","kind":"lesson","search":"Elige una dirección, no un destino exacto Define una práctica semanal Revisa y ajusta cada trimestre Una dirección plausible orienta mejor que un destino exacto a diez años. La práctica semanal convierte el objetivo en algo que ocurre de verdad. La revisión trimestral actualiza el plan sin convertirlo en juicio moral. Compartir el plan con alguien de confianza revela puntos ciegos y sostiene el compromiso."},{"id":"se27l3","num":107,"lnum":3,"title":"Cerrar el manual, abrir el siguiente","href":"se27l3.html","kind":"lesson","search":"Vuelve a las decisiones, no a los capítulos Aplica una cosa esta semana Comparte lo aprendido Las preguntas de decisión importan más que recordar cada capítulo. Aplicar una práctica esta semana convierte la lectura en experiencia. Observar el resultado produce información que ningún libro puede dar. Compartir lo aprendido consolida el conocimiento y construye red."},{"id":"se27q","num":108,"lnum":4,"title":"Cierre del módulo 27","href":"se27q.html","kind":"quiz","search":"evaluación cierre repaso preguntas ejercicios La lectura se elige por un problema y se alterna entre profundidad y amplitud. Un plan personal combina dirección, práctica semanal y revisión trimestral. Las preguntas de decisión son más duraderas que los detalles de cada capítulo. Aplicar y compartir convierten el conocimiento en experiencia y red."}]}]};</script>
+<script src="js/curso.js"></script>
+</body>
+</html>
