@@ -5,7 +5,7 @@ Alineado temáticamente con *The Software Engineer's Guidebook*, de Gergely Oros
 
 ## Qué incluye
 
-- **108 páginas** en **27 módulos** (3 lecciones y 1 evaluación por módulo).
+- **108 lecciones** en **27 módulos** (3 lecciones y 1 evaluación por módulo).
 - Lectura continua: botón «Completar y seguir», navegación con ← y →, temario lateral siempre disponible.
 - **27 evaluaciones** de 3 preguntas con explicaciones y **81 ejercicios** aplicados.
 - Progreso guardado en `localStorage`, glosario con buscador y modo claro/oscuro.
